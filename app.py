@@ -34,7 +34,7 @@ def index():
             for box in bigboxes:
                 title_tag = box.find('a', {'class': 'CGtC98'})
                 title = title_tag.text.strip().lower() if title_tag else ''
-                if searchString in title:  # <-- adjust dynamically below
+                if searchString in title:
                     productLink = "https://www.flipkart.com" + title_tag['href']
                     break
 
